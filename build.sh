@@ -1,0 +1,1 @@
+docker run -v `pwd`:/app -w /app maven mvn package

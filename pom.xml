@@ -56,6 +56,14 @@
         <plugin>
           <artifactId>maven-war-plugin</artifactId>
           <version>3.2.2</version>
+          <configuration>
+              <webResources>
+                  <resource>
+                      <directory>${build.sourceDirectory}</directory>
+                      <targetPath>WEB-INF/classes</targetPath>
+                  </resource>
+              </webResources>
+          </configuration>
         </plugin>
         <plugin>
           <artifactId>maven-install-plugin</artifactId>
